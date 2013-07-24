@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<object
+    name="portal_controlpanel"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="plone.hud">
+
+    <configlet
+        title="First Panel"
+        action_id="hud.first.example"
+        appId="hud_first_example"
+        category="HUD"
+        condition_expr=""
+        url_expr="string:${portal_url}/@@hud_first_panel"
+        icon_expr=""
+        visible="True"
+        i18n:attributes="title">
+            <permission>HUD: First Panel Permission</permission>
+    </configlet>
+
+    <configlet
+        title="Second Panel"
+        action_id="hud.second.example"
+        appId="hud_second_example"
+        category="HUD"
+        condition_expr=""
+        url_expr="string:${portal_url}/@@hud_second_panel"
+        icon_expr=""
+        visible="True"
+        i18n:attributes="title">
+            <permission>HUD: Second Panel Permission</permission>
+    </configlet>
+
+</object>
